@@ -1,0 +1,116 @@
+:root {
+    --brand: red;
+    --main-bg: white;
+    --progress-track: pink;
+}
+
+body {
+    padding: 20% 10%;
+}
+
+.progress {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.progress:focus {
+    outline: none;
+}
+
+.progress::-moz-focus-outer {
+    border: 0;
+}
+
+.progress::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--brand);
+    background-color: var(--main-bg);
+    cursor: pointer;
+}
+
+.progress::-moz-range-track {
+    height: 2px;
+    background-color: var(--progress-track);
+}
+
+.progress::-moz-range-progress {
+    background: var(--brand);
+}
+
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--brand);
+    background-color: var(--main-bg);
+    cursor: pointer;
+    margin-top: -9px;
+}
+
+.progress::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: var(--progress-track);
+}
+
+.progress::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    border-width: 22px 0;
+    height: 2px;
+}
+
+.progress::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid;
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+
+.progress::-ms-thumb {
+    border-color: #4A90E2;
+    background-color: #FBFBFB;
+}
+
+.progress::-ms-fill-lower {
+    background: #4A90E2;
+}
+.progress::-ms-fill-upper {
+    background: #c1c1c1;
+}
+
+.progress-wrapper {
+    position: relative;
+    height: 35px;
+}
+
+.progress-wrapper .bookmark {
+    position: absolute;
+    z-index: 1;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.progress-wrapper .bookmark svg {
+    width: 16px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.progress-wrapper .bookmark path {
+    fill: var(--brand);
+}
+
