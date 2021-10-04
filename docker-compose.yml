@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: 'python:3'
+    command: 'python3 -m http.server --directory /app'
+    volumes:
+      - .:/app
+    ports:
+      - '8000:8000'
