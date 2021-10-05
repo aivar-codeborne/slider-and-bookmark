@@ -102,6 +102,7 @@ body {
     z-index: 1;
     line-height: normal;
     cursor: pointer;
+    pointer-events: none
 }
 
 .progress-wrapper .bookmark svg {
